@@ -28,8 +28,14 @@ for index in someInts {
 print(max)
 */
 var strs = ["ad","d","s2","ad","4","s","q"]
-var length = strs.count-1
 for (index, item) in strs.enumerated() {
-    strs[index] = strs[length-index]
-    
+    if index < strs.count / 2{
+        var temp = ""
+        temp = strs[index]
+        strs[index] = strs[strs.count-index-1]
+        strs[strs.count-index-1] = temp
+    }
+}
+for item in strs{
+    print(item)
 }
