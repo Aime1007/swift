@@ -26,7 +26,7 @@ for index in someInts {
     }
 }
 print(max)
-*/
+
 var strs = ["ad","d","s2","ad","4","s","q"]
 for (index, item) in strs.enumerated() {
     if index < strs.count / 2{
@@ -37,5 +37,23 @@ for (index, item) in strs.enumerated() {
     }
 }
 for item in strs{
+    print(item)
+}*/
+var array:[Int] = [1,2,3,4,5]
+var temp = 0
+for (index, item) in array.enumerated() {
+    
+    if index < 1 {
+        temp = array[index]
+        array[index] = array[index+1]
+    }
+    else if index < array.count-1 {
+        array[index] = array[index+1]
+    }
+    else {
+        array[index] = temp
+    }
+}
+for item in array{
     print(item)
 }
