@@ -38,7 +38,8 @@ for (index, item) in strs.enumerated() {
 }
 for item in strs{
     print(item)
-}*/
+}
+ 
 var array:[Int] = [1,2,3,4,5]
 var temp = 0
 for (index, item) in array.enumerated() {
@@ -57,3 +58,8 @@ for (index, item) in array.enumerated() {
 for item in array{
     print(item)
 }
+*/
+func sum(i1:Int , i2:Int) -> Int{
+    return i1 + i2
+}
+print(sum(i1: 2, i2: 4))
